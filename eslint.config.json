@@ -35,7 +35,12 @@
         "vitest/no-conditional-tests": "error",
         "vitest/no-disabled-tests": "error",
         "vitest/no-done-callback": "error",
-        "vitest/no-focused-tests": "error",
+        "vitest/no-focused-tests": [
+          "error",
+          {
+            "fixable": false
+          }
+        ],
         "vitest/no-identical-title": "error",
         "vitest/prefer-called-with": "error",
         "vitest/prefer-equality-matcher": "error",
