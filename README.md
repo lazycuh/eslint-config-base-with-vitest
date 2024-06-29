@@ -1,6 +1,13 @@
 # eslint-config-base-with-vitest [![](https://circleci.com/gh/babybeet/eslint-config-base-with-vitest.svg?style=svg&logo=appveyor)](https://app.circleci.com/pipelines/github/babybeet/eslint-config-base-with-vitest?branch=main)
 
-[Base ESLint rules](https://github.com/babybeet/eslint-config-base) with support for linting Jest test files.
+[Base ESLint rules](https://github.com/babybeet/eslint-config-base) with support for linting Vitest test files.
+
+## ESLint compatibility
+
+| This library | ESLint |
+| ------------ | ------ |
+| 2.x.x        | ^9     |
+| 1.x.x        | ^8     |
 
 ## Installation
 
@@ -18,9 +25,35 @@
   yarn add @babybeet/eslint-config-base-with-vitest
   ```
 
-## Setting up
+### ESLint 9
 
-In your `.eslintrc.json` file, add the followings:
+`eslint.config.js` file
+
+```js
+import baseConfig from '@babybeet/eslint-config-base-with-vitest';
+
+/**
+ * @type {import('eslint').Linter.FlatConfig[]}
+ */
+export default [
+  ...baseConfig.map(config => ({
+    ...config,
+
+    files: ['src/**/*.ts'], // Only lint Typescript files under `src` directory.
+
+    rules: {
+      ...config.rules
+      // Your rule overrides go here
+    }
+  }))
+];
+```
+
+_If your `package.json` file has `"type": "module"`, you can change the above `require` and `module.exports` to `import` and `export default` respectively_.
+
+### ESLint 8
+
+`.eslintrc.json` file
 
 ```json
 {
@@ -37,7 +70,7 @@ In your `.eslintrc.json` file, add the followings:
       "files": ["*.ts"],
       "extends": ["@babybeet/eslint-config-base-with-vitest"],
       "rules": {
-        // Add your own rule overrides if desired.
+        // Your rule overrides go here
       }
     }
   ]
