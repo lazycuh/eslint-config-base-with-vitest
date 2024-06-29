@@ -8,8 +8,8 @@ importers:
   .:
     dependencies:
       '@babybeet/eslint-config-base':
-        specifier: ^2.0.0
-        version: 2.0.0(eslint@9.6.0)(typescript@5.5.2)
+        specifier: ^2.0.2
+        version: 2.0.2(eslint@9.6.0)(typescript@5.5.2)
       eslint-plugin-vitest:
         specifier: ^0.5.4
         version: 0.5.4(@typescript-eslint/eslint-plugin@7.14.1(@typescript-eslint/parser@7.14.1(eslint@9.6.0)(typescript@5.5.2))(eslint@9.6.0)(typescript@5.5.2))(eslint@9.6.0)(typescript@5.5.2)
@@ -28,9 +28,9 @@ importers:
         version: 3.3.2
 
 packages:
-  '@babybeet/eslint-config-base@2.0.0':
+  '@babybeet/eslint-config-base@2.0.2':
     resolution:
-      { integrity: sha512-3VUhvSpqvddMaNkJWqGf1uRe5M1j6UNi4S95mhkS6bzitc9+AEb/xO9r5/o63qKeb8ie/o6GSqDg1wAlmq1obg== }
+      { integrity: sha512-KzHWIfA9a8nylLP+P5fm9Iy/kuMcE8nLyCguUqMZh6i6W7qfMwdqdBBTsfnCSgwCZ9Aaa6LBOUgVVTULNcvQtA== }
     peerDependencies:
       eslint: '>= 9.6.0'
 
@@ -50,6 +50,11 @@ packages:
     resolution:
       { integrity: sha512-G/M/tIiMrTAxEWRfLfQJMmGNX28IxBg4PBz8XqQhqUHLFI6TL2htpIB1iQCj144V5ee/JaKyT9/WZ0MGZWfA7A== }
     engines: { node: ^12.0.0 || ^14.0.0 || >=16.0.0 }
+
+  '@eslint/compat@1.1.0':
+    resolution:
+      { integrity: sha512-s9Wi/p25+KbzxKlDm3VshQdImhWk+cbdblhwGNnyCU5lpSwtWa4v7VQCxSki0FAUrGA3s8nCWgYzAH41mwQVKQ== }
+    engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
 
   '@eslint/config-array@0.17.0':
     resolution:
@@ -846,6 +851,11 @@ packages:
       { integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ== }
     engines: { node: '>=18' }
 
+  globals@15.6.0:
+    resolution:
+      { integrity: sha512-UzcJi88Hw//CurUIRa9Jxb0vgOCcuD/MNjwmXp633cyaRKkCWACkoqHCtfZv43b1kqXGg/fpOa8bwgacCeXsVg== }
+    engines: { node: '>=18' }
+
   globalthis@1.0.4:
     resolution:
       { integrity: sha512-DpLKbNU4WylpxJykQujfCcwYWiV/Jhm50Goo0wrVILAv5jOr9d+H+UR3PhSCD2rCCEIg0uc+G+muBTwD54JhDQ== }
@@ -1625,8 +1635,11 @@ packages:
     engines: { node: '>=10' }
 
 snapshots:
-  '@babybeet/eslint-config-base@2.0.0(eslint@9.6.0)(typescript@5.5.2)':
+  '@babybeet/eslint-config-base@2.0.2(eslint@9.6.0)(typescript@5.5.2)':
     dependencies:
+      '@eslint/compat': 1.1.0
+      '@eslint/eslintrc': 3.1.0
+      '@eslint/js': 9.6.0
       '@stylistic/eslint-plugin': 2.3.0(eslint@9.6.0)(typescript@5.5.2)
       '@typescript-eslint/eslint-plugin': 7.14.1(@typescript-eslint/parser@7.14.1(eslint@9.6.0)(typescript@5.5.2))(eslint@9.6.0)(typescript@5.5.2)
       '@typescript-eslint/parser': 7.14.1(eslint@9.6.0)(typescript@5.5.2)
@@ -1641,6 +1654,7 @@ snapshots:
       eslint-plugin-sort-keys-fix: 1.1.2
       eslint-plugin-typescript-sort-keys: 3.2.0(@typescript-eslint/parser@7.14.1(eslint@9.6.0)(typescript@5.5.2))(eslint@9.6.0)(typescript@5.5.2)
       eslint-plugin-unused-imports: 4.0.0(@typescript-eslint/eslint-plugin@7.14.1(@typescript-eslint/parser@7.14.1(eslint@9.6.0)(typescript@5.5.2))(eslint@9.6.0)(typescript@5.5.2))(eslint@9.6.0)
+      globals: 15.6.0
       typescript-eslint: 7.14.1(eslint@9.6.0)(typescript@5.5.2)
     transitivePeerDependencies:
       - eslint-import-resolver-node
@@ -1663,6 +1677,8 @@ snapshots:
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.11.0': {}
+
+  '@eslint/compat@1.1.0': {}
 
   '@eslint/config-array@0.17.0':
     dependencies:
@@ -2496,6 +2512,8 @@ snapshots:
       is-glob: 4.0.3
 
   globals@14.0.0: {}
+
+  globals@15.6.0: {}
 
   globalthis@1.0.4:
     dependencies:

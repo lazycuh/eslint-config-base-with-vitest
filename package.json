@@ -41,7 +41,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@babybeet/eslint-config-base": "^2.0.0",
+    "@babybeet/eslint-config-base": "^2.0.2",
     "eslint-plugin-vitest": "^0.5.4"
   },
   "devDependencies": {
