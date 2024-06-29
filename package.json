@@ -2,6 +2,7 @@
   "name": "@babybeet/eslint-config-base-with-vitest",
   "version": "1.0.2",
   "main": "index.js",
+  "module": "index.cjs",
   "author": {
     "name": "Baby Beet"
   },
@@ -10,12 +11,19 @@
     "url": "git+https://github.com/babybeet/eslint-config-base-with-vitest"
   },
   "exports": {
-    ".": "./index.js",
-    "./package.json": "./package.json"
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs",
+      "default": "./index.js"
+    }
   },
   "publishConfig": {
     "access": "public"
   },
+  "type": "module",
   "keywords": [
     "eslint",
     "eslint config",
@@ -33,10 +41,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@babybeet/eslint-config-base": "^2.0.0",
     "eslint-plugin-vitest": "^0.5.4"
   },
   "devDependencies": {
-    "@babybeet/eslint-config-base": "^1.1.0",
+    "eslint": "^9.6.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2"

@@ -38,3 +38,4 @@ lerna-debug.log*
 
 .ignored
 index.js
+index.cjs
