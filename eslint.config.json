@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/eslintrc.json",
-  "extends": "@babybeet/eslint-config-base",
+  "extends": "@lazycuh/eslint-config-base",
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],

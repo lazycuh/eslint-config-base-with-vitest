@@ -2,7 +2,7 @@ const { fixupConfigRules, fixupPluginRules } = require('@eslint/compat');
 const { FlatCompat } = require('@eslint/eslintrc');
 const js = require('@eslint/js');
 const vitest = require('eslint-plugin-vitest');
-const baseConfig = require('@babybeet/eslint-config-base');
+const baseConfig = require('@lazycuh/eslint-config-base');
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,

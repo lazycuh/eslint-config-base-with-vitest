@@ -1,6 +1,6 @@
-# eslint-config-base-with-vitest [![](https://circleci.com/gh/babybeet/eslint-config-base-with-vitest.svg?style=svg&logo=appveyor)](https://app.circleci.com/pipelines/github/babybeet/eslint-config-base-with-vitest?branch=main)
+# eslint-config-base-with-vitest [![](https://circleci.com/gh/lazycuh/eslint-config-base-with-vitest.svg?style=svg&logo=appveyor)](https://app.circleci.com/pipelines/github/lazycuh/eslint-config-base-with-vitest?branch=main)
 
-[Base ESLint rules](https://github.com/babybeet/eslint-config-base) with support for linting Vitest test files.
+[Base ESLint rules](https://github.com/lazycuh/eslint-config-base) with support for linting Vitest test files.
 
 ## ESLint compatibility
 
@@ -13,16 +13,16 @@
 
 - `npm`
   ```
-  npm i -S @babybeet/eslint-config-base-with-vitest
+  npm i -S @lazycuh/eslint-config-base-with-vitest
   ```
 - `pnpm`
   ```
-  pnpm i -S @babybeet/eslint-config-base-with-vitest
+  pnpm i -S @lazycuh/eslint-config-base-with-vitest
   ```
 - `yarn`
 
   ```
-  yarn add @babybeet/eslint-config-base-with-vitest
+  yarn add @lazycuh/eslint-config-base-with-vitest
   ```
 
 ### ESLint 9
@@ -30,7 +30,7 @@
 `eslint.config.js` file
 
 ```js
-import baseConfig from '@babybeet/eslint-config-base-with-vitest';
+import baseConfig from '@lazycuh/eslint-config-base-with-vitest';
 
 /**
  * @type {import('eslint').Linter.FlatConfig[]}
@@ -68,7 +68,7 @@ _If your `package.json` file has `"type": "module"`, you can change the above `r
   "overrides": [
     {
       "files": ["*.ts"],
-      "extends": ["@babybeet/eslint-config-base-with-vitest"],
+      "extends": ["@lazycuh/eslint-config-base-with-vitest"],
       "rules": {
         // Your rule overrides go here
       }

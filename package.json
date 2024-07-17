@@ -1,5 +1,5 @@
 {
-  "name": "@babybeet/eslint-config-base-with-vitest",
+  "name": "@lazycuh/eslint-config-base-with-vitest",
   "version": "2.0.1",
   "main": "index.js",
   "module": "index.cjs",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/babybeet/eslint-config-base-with-vitest"
+    "url": "git+https://github.com/lazycuh/eslint-config-base-with-vitest"
   },
   "exports": {
     "./package.json": {
@@ -41,7 +41,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@babybeet/eslint-config-base": "^2.0.2",
+    "@lazycuh/eslint-config-base": "^3.0.0",
     "eslint-plugin-vitest": "^0.5.4"
   },
   "devDependencies": {

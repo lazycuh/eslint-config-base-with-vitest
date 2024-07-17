@@ -4,7 +4,7 @@ import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import path from 'node:path';
 import vitest from 'eslint-plugin-vitest';
-import baseConfig from '@babybeet/eslint-config-base';
+import baseConfig from '@lazycuh/eslint-config-base';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
