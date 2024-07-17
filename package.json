@@ -1,6 +1,6 @@
 {
   "name": "@lazycuh/eslint-config-base-with-vitest",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "main": "index.js",
   "module": "index.cjs",
   "author": {
