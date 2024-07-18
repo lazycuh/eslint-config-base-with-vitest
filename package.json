@@ -4,7 +4,7 @@
   "main": "index.js",
   "module": "index.cjs",
   "author": {
-    "name": "Baby Beet"
+    "name": "Lazy Cuh"
   },
   "repository": {
     "type": "git",
@@ -41,10 +41,10 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@lazycuh/eslint-config-base": "^3.0.3",
     "eslint-plugin-vitest": "^0.5.4"
   },
   "devDependencies": {
+    "@lazycuh/eslint-config-base": "^3.0.4",
     "eslint": "^9.7.0",
     "husky": "^9.1.0",
     "lint-staged": "^15.2.7",
