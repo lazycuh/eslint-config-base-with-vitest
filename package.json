@@ -41,7 +41,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@lazycuh/eslint-config-base": "^3.0.2",
+    "@lazycuh/eslint-config-base": "^3.0.3",
     "eslint-plugin-vitest": "^0.5.4"
   },
   "devDependencies": {
