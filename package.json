@@ -38,17 +38,17 @@
     "build": "node make-config.js",
     "check-code-styles": "prettier --check \"(*.js|*.json|*.md)\"",
     "lint-staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
-    "@lazycuh/eslint-config-base": "^3.0.0",
+    "@lazycuh/eslint-config-base": "^3.0.1",
     "eslint-plugin-vitest": "^0.5.4"
   },
   "devDependencies": {
-    "eslint": "^9.6.0",
-    "husky": "^9.0.11",
+    "eslint": "^9.7.0",
+    "husky": "^9.1.0",
     "lint-staged": "^15.2.7",
-    "prettier": "^3.3.2"
+    "prettier": "^3.3.3"
   },
   "lint-staged": {
     "**/*.{js,json,md,yaml,yml}": [
