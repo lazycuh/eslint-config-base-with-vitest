@@ -20,6 +20,13 @@ const compat = new FlatCompat({
 export default [
   ...baseConfig,
 
+  {
+    files: ['**/vitest.config.ts', 'vitest.config.ts'],
+    rules: {
+      'import/no-unresolved': 'off'
+    }
+  },
+
   ...fixupConfigRules(compat.extends('plugin:vitest/legacy-recommended')).map(config => ({
     ...config,
     files: ['*.ts', '*.tsx'],
